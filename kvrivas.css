@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+:root{
+    --peach-base: #f6cfb2;
+    --peach-lighter:#fcf9f4;
+    --peach-light:#feefe3;
+    --green-base:#224229;
+    --gray-base:#595f5a;
+    --black:#171d18;
+    --white:#ffffff;
+
+
+}
+body{
+    height: 100%;
+    width:100%;
+    /* display: inline-block; */
+}
+.background {
+    
+    background-image: url('image_2.png');
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    
+
+}
+h2{
+    color: var(--gray-base);
+}
+.empty{
+    display: none;
+}
+.text-sm{
+    font-size:12px;
+    font-weight:600;
+    font-family: 'Poppins', sans-serif;
+}
+.semi-bold {
+    font-weight: 600;
+ }
+
+ .text-md{
+    font-size:16px;
+    font-weight:500;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+.text-lg{
+    font-size:28px;
+    font-weight:600;
+    font-family: 'Playfair Display', serif;
+}
+.text-xl{
+    font-size:34px;
+    font-weight:400;
+    font-family: 'Playfair Display', serif;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+.bio {
+    margin: 32px 0px;
+    /* position: absolute; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: var(--peach-lighter);
+   
+}
+
+.links{
+    margin:10px;
+    padding-left: 10px;
+    padding-right:20px;
+
+
+    /* display: inline-block; */
+    /* text-align: center; */
+    /* align-content: center; */
+
+}
+button{
+    padding: 6px 12px;
+    vertical-align: middle;
+    border-radius:3px;
+  background-color: var(--peach-base);
+  font-family: "Poppins", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  white-space: nowrap;
+  cursor: progress;
+  touch-action:manipulation;
+  user-select:text; 
+  /* : var(--green-base); */
+ 
+  
+}
+.card {
+    background-color: var(--white);
+    
+}
+
+.desktop-logo{
+    display: inline;
+}
+
+.mobile-logo{
+    background-color:red;
+    display: none;
+}
+/* #info{
+    border-radius: 30px;
+    background-color: #fcf9f4;
+} */
+
+  .green-background{
+    background-image: linear-gradient(to top, #439d7c, #224229);
+    /* position: relative; */
+ }
+
+ @media only screen and (max-width: 768px) {
+    .mobile-logo{
+        background-color:red;
+        display: inline;
+    }
+    .desktop-logo{
+        display: none;
+    }
+    
+}
+
