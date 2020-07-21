@@ -14,7 +14,7 @@
 body{
     height: 100%;
     width:100%;
-    /* display: inline-block; */
+
 }
 .background {
     
@@ -24,39 +24,46 @@ body{
     
 
 }
-h2{
+.body{
+    display: inline-block;
+}
+.gray {
     color: var(--gray-base);
+}
+.green {
+    color: var(--green-base);
+}
+.white {
+    color: var(--white);
 }
 .empty{
     display: none;
 }
-.text-sm{
+.text-sm, .card-text{
     font-size:12px;
     font-weight:600;
     font-family: 'Poppins', sans-serif;
 }
-.semi-bold {
+.semi-bold, .card-text {
     font-weight: 600;
  }
 
- .text-md{
+ .text-md, .card-description{
     font-size:16px;
     font-weight:500;
     font-family: 'Poppins', sans-serif;
-    
-    
 }
 .text-lg{
     font-size:28px;
     font-weight:600;
     font-family: 'Playfair Display', serif;
 }
-.text-xl{
+.text-xl, .card-title{
     font-size:34px;
     font-weight:400;
     font-family: 'Playfair Display', serif;
 }
-.bold{
+.bold, .card-title{
     font-weight: bold;
 }
 
@@ -71,16 +78,8 @@ h2{
 }
 
 .links{
-    margin:10px;
-    padding-left: 10px;
-    padding-right:20px;
-
-
-    /* display: inline-block; */
-    /* text-align: center; */
-    /* align-content: center; */
-
-}
+    margin: 0px 16px 48px 18px;
+   }
 button{
     padding: 6px 12px;
     vertical-align: middle;
@@ -92,12 +91,35 @@ button{
   line-height: normal;
   letter-spacing: normal;
   white-space: nowrap;
-  cursor: progress;
+  cursor: pointer;
   touch-action:manipulation;
   user-select:text; 
-  /* : var(--green-base); */
+  border: transparent;
+  /* margin: 0px, 16px, 48px, 32px; */
  
-  
+}
+section{
+    margin: 16px 0px 40px 0px;
+}
+.description{
+    margin: 8px 32px 0px 32px;
+}
+
+.icon{
+    display: inline-block;
+}
+.envelope{
+    margin: 0px 0px 0px 32px;
+}
+p {
+    margin: 12px 32px;
+    display: inline-block;
+}
+.title{
+    margin: 8px 16px;
+}
+.head{
+    
 }
 .card {
     background-color: var(--white);
@@ -105,6 +127,7 @@ button{
 }
 
 .desktop-logo{
+    margin: 52px 0px 64px 32px;
     display: inline;
 }
 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelly V Rivas</title>
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/bootstrap-grid.css"> 
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css"> 
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="kvrivas.css">
@@ -14,19 +15,24 @@
     <div class="container-fluid">
         <div class="row background" id="info">
             
-                <div class="col-sm-6 col-md-6 col-lg-6 bio " id="bio">
+                <div class="col-sm-12 col-md-6 col-lg-6 bio" id="bio">
                   <div class="row bio">
-                    <img src="kr-logo-vert.svg" class="desktop-logo">
+                    <img src="kr-logo-vert.svg" class="desktop-logo"/>
                     <img src="kr-logo-vert.svg" class="mobile-logo">
                       <div class="row">
 
-                    <div class="col-sm-4 col-md-4 text-md" id="github"><button type ="button" class="github links"><img src='github.svg'>
-                      GitHub <img src='external-link-alt.svg'></button>
-                      
-                    </div>
-                    <div class="col-sm-4 col-md-4 text-md" id="resume"><button type="button" class="email links"><img src='envelope.svg'>
-                      Email</button>
-                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-md" id="github">
+                      <button type ="button" class="github links">
+                        <img class="icon"src='github.svg'/>
+                      <p class="title">GitHub</p> 
+                      <img class="icon" src='external-link-alt.svg'>
+                      </button>
+                      <button type="button" class="email links">
+                        <img class= "icon" src='envelope.svg'/>
+                        <p class="title">Email</p>
+                      </button>
+                </div>
+                    
                     <!-- <div class="w-100 d-none d-md-block"></div> -->
                     
                     <!-- <div class="col-sm-4 col-md-4 button empty">
@@ -34,25 +40,28 @@
                       </div> -->
                     <div class="row">
                         <div class="col-sm-12 col-md-12">
-                            <header class="text-lg semi-bold">education</header>
+                            <p class="text-lg semi-bold">Education</p>
                           </div>
 
-                       
+                          <section class="education">
                        <div class="col-sm-12 col-md-12">
-                        <h1 class="text-md">Coding Boot Camp at UNC Charlotte</h1>
+                        
+                        <p class="text-md description">Coding Boot Camp at UNC Charlotte</p>
                     </div>
-
+                    
                     <div class="col-sm-12 col-md-12">
-                        <h2 class="text-sm">October 2020</h2>
+                        <p class="text-md gray description">October 2020</p>
                     </div>
                     <div class="col-sm-12 col-md-12 text-sm">
-                        <p class="text-md">A dynamic full-stack coding program curriculum, including, HTML5, CSS3, JavaScript, jQuery, Bootstrap, React.js, Node.js, C#, .Net, Database Theory, MongoDB, MySQL, Command Line, and Git.</p>
+                        <p class="text-md description">A dynamic full-stack coding program curriculum, including, HTML5, CSS3, JavaScript, jQuery, Bootstrap, React.js, Node.js, C#, .Net, Database Theory, MongoDB, MySQL, Command Line, and Git.</p>
+                    </div>
+                  </section>
+                    <div class="col-sm-12 col-md-12">
+                        <p class="text-lg">Contact</p>
                     </div>
                     <div class="col-sm-12 col-md-12">
-                        <h3 class="text-lg">contact</h3>
-                    </div>
-                    <div class="col-sm-12 col-md-12">
-                        <p class="text-md"><img src='envelope.svg'> kellyv.rivas@gmail.com</p>
+                      <img class="icon envelope" src='envelope.svg'/>
+                      <p class="text-md title">Kellyv.rivas@gmail.com</p>
                     </div>
                     
                        
@@ -65,39 +74,43 @@
                   </div>
                 </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-6" id="featuredProjects">
+                <div class="col-sm-12 col-md-6 col-lg-6" id="featuredProjects">
                    <div class="row green-background">
-                        <div class="col-sm-12 col-md-12 col-lg-12" id="projectOne">
-                            <header class="text-lg semi-bold">
-
-                            </header>Featured projects
+                        <div class="col-sm-6 col-md-12 col-lg-12">
+                            <header class="text-lg semi-bold white">
+                              featured projects
+                            </header>
                           </div>
-                      <div class="col-sm-6 col-md-12 col-lg-12" id="projectOne">
+                          <section class="projects">
+                      <div class="col-sm-12 col-md-12 col-lg-12" id="projectOne">
                         <div class="card">
                             <div class="card-body">
-                              <h5 class="card-title">project 1</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h1 class="card-text"> JAVASCRIPT, HTML, CSS</h1>
+                              <p class="card-title green">Brewery Finder</p>
+                              <img class= "arrow" src='arrow-right-stroke.svg'/>
+                              <p class="card-description">Short description of the project goes here.</p>
                             </div>
                         
                       </div>
-                      <div class="col-sm-6 col-md-12 col-lg-12" id="projectTwo">
+                      <div class="col-sm-12 col-md-12 col-lg-12" id="projectTwo">
                         <div class="card">
                             <div class="card-body">
-                              <h5 class="card-title">project 2</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h1 class="card-text"> JAVASCRIPT, HTML, CSS</h1>
+                              <p class="card-title green">Brewery Finder</p>
+                              <img class= "arrow" src='arrow-right-stroke.svg'/>
+                              <p class="card-description">Short description of the project goes here.</p>
                             </div>
                         
                       </div>
                         
                       </div>
-                      <div class="col-sm-6 col-md-12 col-lg-12" id="projectThird">
+                      <div class="col-sm-12 col-md-12 col-lg-12" id="projectThree">
                         <div class="card">
                             <div class="card-body">
-                              <h5 class="card-title">project 3</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h1 class="card-text"> JAVASCRIPT, HTML, CSS</h1>
+                              <p class="card-title green">Brewery Finder</p>
+                              <img class= "arrow" src='arrow-right-stroke.svg'/>
+                              <p class="card-description">Short description of the project goes here.</p>
                             </div>
                         
                       </div>
@@ -105,10 +118,13 @@
                       <div class="col-sm-12 col-md-12 col-lg-12" id="projectFour">
                         <div class="card">
                             <div class="card-body">
-                              <h5 class="card-title">project 4</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h1 class="card-text"> JAVASCRIPT, HTML, CSS</h1>
+                              <p class="card-title green">Brewery Finder</p>
+                              <img class= "arrow" src='arrow-right-stroke.svg'/>
+                              <p class="card-description">Short description of the project goes here.</p>
+                              
                             </div>
+                          </section>
                         
                       </div>
                       </div>
